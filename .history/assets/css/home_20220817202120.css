@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  border: 1px solid black;
+  padding: 20px 25px;
+  height: 90vh;
+}
+
+.heading {
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+  height: 30px;
+  /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.heading h2 {
+  color: #444444;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-style: inherit; */
+}
+
+.description {
+  border-bottom: 1px solid #eaeaea;
+  /* display: flex;
+    flex-direction:column;
+    justify-content: flex-start; */
+  /* background-color: yellow; */
+  padding: 0px 10px;
+  padding-bottom: 15px;
+}
+
+.description p,
+.category p,
+.date p {
+  color: #444444;
+  text-transform: uppercase;
+  /* background-color: pink; */
+}
+
+.description input[type="text"] {
+  border-style: none;
+  width: 100%;
+  /* text-align: left; */
+}
+
+.section2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 15px;
+}
+
+.category select {
+  width: 70%;
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; Remove default arrow */
+  /* background-image: url(...);   Add custom arrow */
+  /* background-color: transparent; */
+}
+
+select option {
+  cursor: pointer;
+  /* color: #333; */
+}
+
+/* select option:hover{
+  background-color:pink;
+} */
+
+.category,
+.date {
+  /* height: 100%; */
+  padding: 0px 10px;
+  flex: 0.5;
+}
+
+/* .date input[type="date"] {
+  /* height: 100%; */
+/* } */
+
+.category select,
+.description input[type="text"],
+input::placeholder,
+.date input[type="date"] {
+  font-size: 0.9 rem;
+  border: none;
+  outline: 0px;
+  color: rgb(94, 87, 87);
+  /* -webkit-appearance: button; */
+  /* -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+.section2 .date,
+.section2 .category {
+  border-left: 1px solid #eaeaea;
+}
+
+.buttons {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.buttons button {
+  margin: 10px;
+  height: 40px;
+  /* width: 150px; */
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: large;
+}
+
+#add-button {
+  background-color: #444444;
+  padding-right: 20px;
+}
+
+#delete-button {
+  background-color: #ee351e;
+}
+
+#delete-button i,
+#add-button i {
+  margin-right: 10px;
+}
+
+.tasks {
+  margin-top: 20px;
+}
+
+.tasks .task {
+  border-bottom: 1px solid #eaeaea;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasks .task-desc {
+  display: flex;
+  align-items: center;
+}
+
+.task-wrapper{
+  /* display: flex; */
+}
+
+
+.tasks .task-dueDate {
+  font-size: 14px;
+  /* margin: 20px; */
+  margin-left: 30px;
+}
+
+.task-date{
+  margin-left: 5px;
+}
+
+.tasks .task-category {
+  /* border: 1px solid black; */
+  padding: 10px 5px;
+  text-transform: uppercase;
+  width: 90px;
+  text-align: center;
+  color: white;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="heading">
+            <h2>TODO App</h2>
+        </div>
+        <form action="" method="post">
+            <div class="description">
+                <p>Description</p>
+                <input type="text" name="description" placeholder="What would you like to do?" required>
+            </div>
+            <div class="section2">
+                <div class="category">
+                    <p>Category</p>
+                    <select name="category" required>
+                        <option selected disabled><i class="fa-solid fa-caret-down"></i>Choose a category </option>
+                        <option value="Personal">Personal</option>
+                        <option value="Work">Work</option>
+                        <option value="School">School</option>
+                        <option value="Cleaning">Cleaning</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="date">
+                    <p>Due Date</p>
+                    <input type="date" name="due_date" required>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="submit" id="add-button" formaction="/create-task"><i class="fa-solid fa-plus"></i>Add
+                    Task</button>
+                <button type="submit" id="delete-button" formaction="/delete-task"><i
+                        class="fa-solid fa-trash-can"></i>Delete Tasks</button>
+            </div>
+        </form>
+        <div class="tasks">
+            <% for(let task of tasks){ %>
+                <input type="checkbox">
+                <div class="task">
+                    <p>
+                        <%=task.description %>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <%=task.due_date %>
+                    </p>
+                <!-- </div> -->
+                <% } %>
+        </div>
+    </div>
+</body>
+
+</html>

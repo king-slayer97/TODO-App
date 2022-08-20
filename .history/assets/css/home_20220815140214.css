@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+
+.wrapper{
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px 12px;
+}
+
+.heading{
+    border-bottom: 1px solid #eaeaea;
+    height: 30px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.heading h2{
+    color: #6e6c6b;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-style: inherit; */
+}
+
+.description{
+    border-bottom: 1px solid #eaeaea;
+    /* display: flex;
+    flex-direction:column;
+    justify-content: flex-start; */
+}
+
+.description p{
+    height: 100;
+}
+
+.description input[type="text"]{
+    border-style: none;
+}

@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+
+.wrapper{
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px 12px;
+}
+
+.heading{
+    border-bottom: 1px solid #eaeaea;
+}
+
+.heading h2{
+    color: #6e6c6b;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
