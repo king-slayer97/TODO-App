@@ -7,7 +7,7 @@ module.exports.homePage = function(req, res){
         }
         else{
             // console.log(taskList);
-            res.render('home',{title: "Task Tracker",tasks:taskList});
+            res.render('home',{title: "Task App",tasks:taskList});
         }
     });
 };

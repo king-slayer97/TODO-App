@@ -34,9 +34,7 @@ body {
   padding-bottom: 15px;
 }
 
-.description:focus-within,
-.category:focus-within,
-.date:focus-within {
+.description:focus-within, .category:focus-within, .date:focus-within{
   background-color: #f2f0f0;
 }
 
@@ -48,8 +46,7 @@ body {
   /* background-color: pink; */
 }
 
-.description input[type="text"],
-.date input[type="date"] {
+.description input[type="text"],.date input[type="date"] {
   border-style: none;
   width: 100%;
   background-color: transparent;
@@ -57,6 +54,8 @@ body {
   padding-bottom: 10px;
   /* text-align: left; */
 }
+
+
 
 .section2 {
   display: flex;
@@ -66,8 +65,7 @@ body {
   margin-bottom: 15px;
 }
 
-.category select,
-.date input[type="date"] {
+.category select, .date input[type="date"] {
   width: 100%;
   background-color: transparent;
   padding-bottom: 25px;
@@ -79,27 +77,10 @@ body {
   /* background-color: transparent; */
 }
 
-.date input[type="date"] {
-  position: relative;
-}
-
-.date input[type="date"]::-webkit-calendar-picker-indicator {
-  /* display: none; */
-  background: transparent;
-  bottom: 0;
-  color: transparent;
-  cursor: pointer;
-  height: auto;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: auto;
-}
+.date input[type="date"]
 
 select option {
   cursor: pointer;
-  position: absolute;
   /* color: #333; */
 }
 
@@ -107,11 +88,11 @@ select option {
   background-color:pink;
 } */
 
-.input-ui {
+.input-ui{
   display: flex;
 }
 
-.input-ui i {
+.input-ui i{
   color: #a4a1a1;
 }
 
@@ -139,21 +120,20 @@ input::placeholder,
   /* -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); */
 }
 
-input[type="text"]::placeholder {
+input[type="text"]::placeholder{
   opacity: 0.5;
 }
 
 input[type="text"]:focus::-webkit-input-placeholder {
   /* color: red; */
   opacity: 1;
-  
 }
 
 /* .description input[type="text"]:focus{
   background-color: grey;
 } */
 
-/* .category:focus,
+ /* .category:focus,
 .description:focus,
 .date:focus {
   background-color: black; 
@@ -240,12 +220,12 @@ input[type="checkbox"] {
   -o-appearance: none;
 }
 
-input[type="checkbox"]:before {
+input[type=checkbox]:before {
   content: "\f00c";
   color: transparent;
 }
 
-input[type="checkbox"]:checked {
+input[type="checkbox"]:checked{
   background-color: green;
   color: white;
   -moz-appearance: checkbox;

@@ -146,7 +146,7 @@ input[type="text"]::placeholder {
 input[type="text"]:focus::-webkit-input-placeholder {
   /* color: red; */
   opacity: 1;
-  
+  fon-e
 }
 
 /* .description input[type="text"]:focus{
