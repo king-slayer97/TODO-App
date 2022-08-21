@@ -8,5 +8,5 @@ router.get('/',require('../controllers/home_controller').homePage);
 router.post('/create-task',require('../controllers/createTask_controller').createTask);
 router.post('/delete-task',require('../controllers/deleteTask_controller').deleteTask);
 
-//Exporting the Router
+//Exporting
 module.exports = router;

@@ -1,12 +1,9 @@
 const express = require('express');
-//Creating Express Router
+//Ruter
 const router = express.Router();
 
-
-//Route requests
 router.get('/',require('../controllers/home_controller').homePage);
 router.post('/create-task',require('../controllers/createTask_controller').createTask);
 router.post('/delete-task',require('../controllers/deleteTask_controller').deleteTask);
 
-//Exporting the Router
 module.exports = router;

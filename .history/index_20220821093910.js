@@ -3,7 +3,6 @@ const PORT = 3000;
 
 //Creating Express Web App
 const app = express();
-
 const db = require('./config/mongoose');
 
 //setup view engine

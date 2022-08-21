@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-//Creating the Schema
+//
 const taskSchema = new mongoose.Schema({
     description:{
         type:String,
@@ -16,7 +16,6 @@ const taskSchema = new mongoose.Schema({
     }
 });
 
-// Creating model from schema
 const Task = mongoose.model('Task',taskSchema);
 
 module.exports = Task;
