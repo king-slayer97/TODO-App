@@ -1,27 +1,27 @@
-const express = require('express');
+const express = require("express");
+require("dotenv").config();
 const PORT = process.env.PORT || 3000;
 
 //Creating Express Web App
 const app = express();
 
-const db = require('./config/mongoose');
+const db = require("./config/mongoose");
 
 //setup view engine
-app.set('view engine', 'ejs');
-app.set('views','./views');
-app.use(express.static('assets'));
+app.set("view engine", "ejs");
+app.set("views", "./views");
+app.use(express.static("assets"));
 app.use(express.urlencoded());
 
 //importing routes
-const router = require('./routes');
-app.use('/',router);
+const router = require("./routes");
+app.use("/", router);
 
 //Listening on port 3000
-app.listen(PORT, function(err){
-    if(err) {
-        console.log(`Error: ${err}`);
-    }
-    else{
-        console.log(`Listening on port ${PORT}`);
-    }
+app.listen(PORT, function (err) {
+  if (err) {
+    console.log(`Error: ${err}`);
+  } else {
+    console.log(`Listening on port ${PORT}`);
+  }
 });
